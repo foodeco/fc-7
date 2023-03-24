@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224,23%,55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 1440px;
+}
+.container {
+  max-width: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 5px 10px 1px var(--paleBlue);
+}
+.card-image {
+  background-image: url("./images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  height: 220px;
+}
+.main {
+  background-color: #fff;
+  padding: 3em 3em 0 3em;
+  text-align: center;
+}
+.main > div {
+  margin-bottom: 16px;
+}
+.header h2 {
+  font-size: 1000;
+  margin-bottom: 16px;
+}
+.header p {
+  color: var(--desaturatedBlue);
+  font-size: 500;
+}
+.music-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--veryPaleBlue);
+  padding: 1.5em;
+  justify-content: space-between;
+}
+.music-bar a {
+  font-weight: 500;
+  color: var(--brightBlue);
+}
+.music-bar a:hover {
+  text-decoration: none;
+  color:hsl(245, 75%, 72%)
+}
+.music-bar div:nth-child(2) {
+  width: 150px;
+  text-align: left;
+}
+.music-bar div:nth-child(2) p:first-child {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.music-bar div:nth-child(2) p:last-child {
+  color: var(--desaturatedBlue);
+}
+.note {
+  background-image: url("./images/icon-music.svg");
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.btn button {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1em 0;
+  background-color: #fff;
+  font-size: .9em;
+  font-weight: 700;
+  color: var(--paleBlue);
+  background-color: var(--brightBlue);
+  box-shadow: 1px 15px 10px 1px hsl(245, 75%, 92%);
+}
+.btn a {
+  display: block;
+  text-decoration: none;
+  margin: 2em 0;
+  font-size: .9em;
+  font-weight: 700;
+  color: var(--desaturatedBlue);
+}
+.btn a:hover {
+  color: var(--darkBlue);
+}
+.btn button:hover {
+  background-color: hsl(245, 75%, 72%);
+  color: #fff;
+}
