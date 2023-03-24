@@ -122,6 +122,9 @@ body {
   .main {
     padding: 2em 2em 0 2em;
   }
+  .main .header p {
+    text-indent: 2px;
+  }
   .music-bar {
     padding: 1em;
   }
