@@ -16,11 +16,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-image: url("./images/pattern-background-mobile.svg");
-  background-repeat: no-repeat;
+  min-height: 100vh;
+  background: url("./images/pattern-background-mobile.svg") var(--paleBlue);
+  background-repeat: no-repeat, no-repeat;
   background-size: cover;
-  max-width: 1440px;
 }
 .container {
   max-width: 450px;
