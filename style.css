@@ -12,6 +12,7 @@
   --darkBlue: hsl(223, 47%, 23%);
 }
 body {
+  
   display: flex;
   justify-content: center;
   align-items: center;
